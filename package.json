@@ -1,0 +1,23 @@
+{
+  "name": "@lyctianya/cmdtools",
+  "version": "1.0.8",
+  "description": "",
+  "bin": {
+    "lycimg": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --declaration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lyctianya/tools": "^1.0.2",
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "gulp": "^4.0.2",
+    "gulp-tinypng-nokey": "^1.1.0",
+    "typescript": "^4.4.3"
+  }
+}
