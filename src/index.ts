@@ -4,7 +4,7 @@
  * @Author: 李永创
  * @Date: 2021-09-12 17:03:08
  * @LastEditors: 李永创
- * @LastEditTime: 2021-09-13 17:42:58
+ * @LastEditTime: 2021-09-14 10:32:09
  */
 
 import { program } from "commander";
@@ -50,21 +50,17 @@ declare var process: any;
 
 })();
 
+// 进度条使用 yarn add @types/progress
+/*
+import * as ProgressBar from 'progress';
 
-// program
-//   .allowUnknownOption()
-//   .version('0.0.1')
-//   .usage('translator <cmd> [input]')
-
-
-// program
-//   .command('query')
-//   .description('翻译输入')
-//   .action((obj) => {
-//     let word = obj.args.join('');
-//     console.log("word---", word)
-//   });
-// if (!process.argv[2]) {
-//   program.help();
-// }
-// program.parse(process.argv);
+var bar = new ProgressBar(':bar :current/:total', { total: 10 });
+var timer = setInterval(function () {
+  bar.tick();
+  if (bar.complete) {
+    clearInterval(timer);
+  } else if (bar.curr === 5) {
+    bar.interrupt('this message appears above the progress bar\ncurrent progress is ' + bar.curr + '/' + bar.total);
+  }
+}, 1000);
+*/
